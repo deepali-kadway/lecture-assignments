@@ -29,8 +29,6 @@ function registration(event) {
 
     //Save data in local storage
     localStorage.setItem('registerData', JSON.stringify(registerData));
-
-    // Optional: Show success message
     alert("Registration successful! Check console for saved data.");
     
      // Clear form after successful registration
@@ -81,7 +79,6 @@ function clearUserData() {
     localStorage.removeItem('registerData');
     console.log("User data cleared from localStorage");
 
-    // Verify it's cleared
     const check = localStorage.getItem('registerData');
     if (!check) {
         console.log("✅ Data successfully cleared");
